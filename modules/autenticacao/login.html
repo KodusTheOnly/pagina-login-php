@@ -3,27 +3,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Desabilita cache para garantir que sempre carregue a versão mais recente -->
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
   <title>Login</title>
+  <!-- Importa CSS com versão para forçar atualização quando houver mudanças -->
   <link rel="stylesheet" href="../../assets/css/login.css?v=3.0" />
 </head>
 <body>
 <div class="caixa-formulario">
-  <!-- RF02.1 - Formulário de autenticação -->
+  <!-- Formulário envia dados via POST para login.php para processamento -->
   <form class="formulario" action="login.php" method="post">
     <span class="titulo">Entrar</span>
     <span class="subtitulo">Acesse sua conta com e-mail e senha.</span>
     <div class="container-formulario">
+      <!-- Campo de email com validação HTML5 nativa (type="email") -->
       <input type="email" class="entrada" name="email" placeholder="E-mail" required>
+      <!-- Campo de senha com ocultação automática de caracteres -->
       <input type="password" class="entrada" name="senha" placeholder="Senha" required>
     </div>
+    <!-- Botão de submissão do formulário -->
     <button type="submit">Entrar</button>
   </form>
   <div class="secao-formulario">
+    <!-- Links de navegação para outras páginas de autenticação -->
     <p>Não tem uma conta? <a href="criar-conta.html">Cadastre-se</a></p>
-    <!-- RF02.3 - Link para recuperação de senha -->
     <p><a href="esqueci-senha.html">Esqueci minha senha</a></p>
   </div>
 </div>
