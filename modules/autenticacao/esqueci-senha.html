@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>Recuperar Senha</title>
+  <link rel="stylesheet" href="../../assets/css/login.css?v=3.0" />
+</head>
+<body>
+<div class="caixa-formulario">
+  <!-- RF02.3 - Solicitação de recuperação de senha -->
+  <form class="formulario" action="solicitar-recuperacao.php" method="post">
+    <span class="titulo">Recuperar senha</span>
+    <span class="subtitulo">Recupere sua conta com o seu email</span>
+    <div class="container-formulario">
+      <input type="email" class="entrada" name="email" placeholder="Seu email" required>
+    </div>
+    <button type="submit">Enviar link de recuperação</button>
+  </form>
+  <div class="secao-formulario">
+    <p>Já tem uma conta? <a href="login.html">Entrar</a></p>
+    <p>Não tem uma conta? <a href="criar-conta.html">Cadastre-se</a></p>
+  </div>
+</div>
+</body>
+</html>
