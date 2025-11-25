@@ -220,29 +220,6 @@ Após executar o script `banco.sql`, você pode usar as seguintes credenciais:
 
 ---
 
-## 🔄 Fluxo Completo de Autenticação
-
-```mermaid
-graph TD
-    A[login.html] -->|POST| B[login.php]
-    B --> C{Campos válidos?}
-    C -->|Não| D["⚠️ Alerta"]
-    D --> A
-    C -->|Sim| E{Usuário existe?}
-    E -->|Não| F["⚠️ Credenciais inválidas"]
-    F --> A
-    E -->|Sim| G{Senha correta?}
-    G -->|Não| H["⚠️ Credenciais inválidas"]
-    H --> A
-    G -->|Sim| I["✅ Sessão criada"]
-    I --> J[boas-vindas.php]
-    J --> K{Clica Sair?}
-    K -->|Sim| L[logout.php]
-    L --> A
-```
-
----
-
 ## 📚 Tecnologias Utilizadas
 
 - **PHP** 7.0+
