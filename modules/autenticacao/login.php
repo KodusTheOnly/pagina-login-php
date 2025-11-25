@@ -40,8 +40,8 @@ if ($user && password_verify($senha, $user['senha_hash'])) {
     'perfil' => $user['perfil'],     // ADMIN ou OPERADOR
   ];
   
-  // Redireciona para área autenticada
-  header('Location: ../produtos/cadastro_produtos.html');
+  // Redireciona para página de boas-vindas
+  header('Location: boas-vindas.php');
   exit;
 }
 
